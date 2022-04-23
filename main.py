@@ -41,7 +41,7 @@ while running:
             if event.button == 1:
                 board.release(event.pos)
     
-    game_status = 1#board.check_game_status()
+    game_status = board.check_game_status()
     if game_status == 1:
         text = 'YOU WIN'
     elif game_status == -1:
